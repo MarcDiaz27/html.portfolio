@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap');
+
+* {box-sizing:border-box}
+body{
+    background: url(/img/resto-background.jpg);
+    margin: 0;
+    background-size: 2500px;
+
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+.bg-wrap{
+    height: 280%;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    background: black;
+    opacity: .5;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.text {
+  color: solid black;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: -3px;
+  width: 100%;
+  text-align: center;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+img{
+    background: black;
+    height: 500px;
+    width: 500px;
+}
+.menu{
+    padding: 0 3em;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    margin: 2em 0;
+}
+.row img{
+    margin: 1em 0;
+    height: 300px;
+    width: 300px;
+   
+}
+.card{
+    background: #e8e4c9 ;
+    height: 32em;
+    width: 25em;
+    text-align: center;
+    border-radius: .25em;
+    box-shadow: 0 0 2em .2em gray;
+    font-family: 'PT Sans Caption', sans-serif;
+}
+.card h2{
+    text-transform: uppercase;
+}
+#second-row{
+    padding: 2em 10em;
+}
+input[type="button"]{
+    color: black;
+    background: yellow;
+    height: 3em;
+    width: 8em;
+    border-radius: .8em;
+    text-transform: uppercase;
+    outline: none;
+    border: 2px solid black;
+}
+input[type="button"]:hover{
+    color: white;
+    background: orange;
+    border: 2px solid yellow;
+}
+.active{
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+

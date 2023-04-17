@@ -1,0 +1,43 @@
+body{
+    padding: 5em;
+    background: url(/img/bubbletown.png);
+}
+.school-picture{
+    background: black;
+    height: 40em;
+    width: 70em;
+    border-radius: 2em;
+    outline: 10px solid yellow;
+    margin: auto;
+    overflow: hidden
+}
+.school-container{
+    text-align: center;
+}
+.school-content{
+    height: 13em;
+    width: 70em;
+    font-size: 1rem;
+    background: black;
+    margin: auto;
+    color: white;
+    border-radius: .5em;
+}
+.school-content h1{
+    padding: 1em 0 0 0;
+    
+}.school-content p{
+    padding: 0 5em;
+    text-align: justify;
+    font-size: 1.1rem;
+}
+img {
+    transform: translateX(200%);
+    animation: slide 2s forwards;
+    }
+
+@keyframes slide {
+    to{
+    transform: translateX(0);
+    }
+    }

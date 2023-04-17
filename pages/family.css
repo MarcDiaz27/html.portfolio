@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Fira+Sans:wght@500&family=Fjalla+One&family=PT+Sans+Caption&display=swap');
+body{
+    padding: 0;
+    margin: 0;
+}
+.title{
+    background: yellow;
+}
+.title img{
+    width: 100px;
+    height: auto;
+    margin: 3em 3em;
+}
+h1{
+    text-align: center;
+    font-family: 'Fira Sans', sans-serif;
+    padding: 1.2em 0;
+    margin: 0;
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin: auto 0;
+}
+.title-page{
+    display: flex;
+    justify-content: center;
+}
+.odd-row,.even-row{
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2rem;
+    background: #34ebbd;
+    padding: 4em 0;
+}
+.even-row{
+    background: #34e8eb;
+}
+.card{
+    background: yellow;
+    /* height: 25em; */
+    width: 15em;
+    padding: 1em 2em;
+    border-radius: 1em;
+    box-shadow: 0em 0 1em .5em gray;
+    height: 10em; 
+    overflow: hidden;
+    transition:         height 1000ms ease;
+    -moz-transition:    height 1000ms ease;
+    -ms-transition:     height 1000ms ease;
+    -o-transition:      height 1000ms ease;
+    -webkit-transition: height 1000ms ease;
+}
+.card:hover{
+    height: 25em;
+}
+.card h3{
+    font-family: 'Fjalla One', sans-serif;
+}
+.profile-picture{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: black;
+}
+.card-top{
+    text-align: center;
+}
+.card-bottom{
+    text-align: justify;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1.15rem;
+    /* display: none; */
+}

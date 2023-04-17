@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="food-menu.css">
+</head>
+<body>
+   
+<div class="bg-wrap"></div>
+<div class="slideshow-container">
+
+   
+    <div class="mySlides fade">
+      <img src="/img/krabby.jpg" style="width:100%">
+      <div class="text">Krabby Patty</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="/img/meal.png" style="width:100%">
+      <div class="text">Krabby Meal</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="/img/coral.png" style="width:100%">
+      <div class="text">Coral Bits</div>
+    </div>
+
+    <div class="mySlides fade">
+      <img src="/img/fries.jpg" style="width:100%">
+      <div class="text">Kelp Fries</div>
+    </div>
+
+    <div class="mySlides fade">
+      <img src="/img/shake.png"style="width:100%">
+      <div class="text">Kelp Shake</div>
+    </div>
+  
+  
+  </div>
+  <br>
+  <div class="menu">
+      <div class="row">
+          <div class="card">
+              <img src="/img/pattty.jpg" alt="">
+              <h2>Krabby Patty</h2>
+              <h3>$2.00</h3>
+              <div class="buttons">
+                  <input type="button" value="Buy">
+              </div>
+          </div>
+          <div class="card">
+              <img src="/img/krabbymeal.jpg" alt="">
+              <h2>Krabby Meal</h2>
+              <h3>$3.50</h3>
+              <div class="buttons">
+                <input type="button" value="Buy">
+            </div>
+          </div>
+          <div class="card">
+              <img src="/img/bits.jpg" alt="">
+              <h2>Coral Bits</h2>
+              <h3>$1.00</h3>
+              <div class="buttons">
+                <input type="button" value="Buy">
+            </div>
+          </div>
+      </div>
+      <div class="row" id="second-row">
+          <div class="card">
+              <img src="/img/kelpshake.png" alt="">
+              <h2>Kelp Shake</h2>
+              <h3>$2.00</h3>
+              <div class="buttons">
+                <input type="button" value="Buy">
+            </div>
+          </div>
+          <div class="card">
+              <img src="/img/kelpfries.jpg" alt="">
+              <h2>Kelp Fries</h2>
+              <h3>$2.99</h3>
+              <div class="buttons">
+                <input type="button" value="Buy">
+            </div>
+          </div>
+      </div>
+  </div>
+  
+ 
+  <script>
+      var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        slides[slideIndex-1].style.display = "block";
+        setTimeout(showSlides, 4000); // Change image every 2 seconds
+        }
+  </script>
+</body>
+</html>
